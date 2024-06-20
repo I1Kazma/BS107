@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="hamburger" id="menu__open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="header__wrapper" id="menu">
+        <a href="#" class="header__logo">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        <nav class="header__menu">
+          <ul class="menu__items">
+            <li class="menu__item"><a href="#">О нас</a></li>
+            <li class="menu__item"><a href="#">Услуги</a></li>
+            <li class="menu__item"><a href="#">Прайс</a></li>
+            <li class="menu__item"><a href="#">Наша команда</a></li>
+            <li class="menu__item"><a href="#">Фотогалерея</a></li>
+            <li class="menu__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="social__items">
+          <li><a href="tel:+74012937700 ">+7 (4012) 93-77-00</a></li>
+          <li>
+            <a href="#"><img src="img/tg.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="banner">
+        <img
+          style="width: 100%; object-fit: cover; object-position: center"
+          src="img/banner-img.png"
+          alt=""
+        />
+      </section>
+      <section class="services">
+        <div class="services__title">
+          <h2>Услуги Beauty Space 107</h2>
+        </div>
+        <div class="services__content">
+          <div class="services__img">
+            <img src="img/service.png" alt="" />
+          </div>
+          <ul class="services__list">
+            <li class="services__item">
+              <a href="#">
+                <img src="img/arrow-right.svg" alt="" />
+                <span>Парикмахерские услуги</span>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="#">
+                <img src="img/arrow-right.svg" alt="" />
+                <span>Ногтевой сервис</span>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="#">
+                <img src="img/arrow-right.svg" alt="" />
+                <span>Косметология</span>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="#">
+                <img src="img/arrow-right.svg" alt="" />
+                <span>Все услуги</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="swiper promo-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/promo-1.png" alt="" />
+              <div class="slide__background"></div>
+              <div class="slide__content">
+                <h3>Акция на эндосфера-терапию</h3>
+                <span
+                  >При покупке 10 сеансов Эндосфера-терапии по телу, скидка
+                  <b>10%</b></span
+                >
+                <a href="#"
+                  >Узнать больше
+                  <div class="el"></div
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/promo-1.png" alt="" />
+              <div class="slide__background"></div>
+              <div class="slide__content">
+                <h3>Акция на эндосфера-терапию</h3>
+                <span
+                  >При покупке 10 сеансов Эндосфера-терапии по телу, скидка
+                  <b>10%</b></span
+                >
+                <a href="#"
+                  >Узнать больше
+                  <div class="el"></div
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/promo-1.png" alt="" />
+              <div class="slide__background"></div>
+              <div class="slide__content">
+                <h3>Акция на эндосфера-терапию</h3>
+                <span
+                  >При покупке 10 сеансов Эндосфера-терапии по телу, скидка
+                  <b>10%</b></span
+                >
+                <a href="#"
+                  >Узнать больше
+                  <div class="el"></div
+                ></a>
+              </div>
+            </div>
+            v
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+  <script src="js/script.js"></script>
+
+  <script>
+    var promo_swiper = new Swiper(".promo-swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true,
+    });
+  </script>
+</html>
