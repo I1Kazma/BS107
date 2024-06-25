@@ -1,0 +1,10 @@
+.header {
+  margin: 0px 57px;
+}
+.header .header__wrapper {
+  padding: 6px 33px;
+  background: #FCF4F2;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=header.css.map */

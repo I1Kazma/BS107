@@ -1,0 +1,17 @@
+.brands {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.brands .brands__layout {
+  max-width: 1420px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.brands .brands__layout .brands__title {
+  text-align: flex-start;
+}/*# sourceMappingURL=brands.css.map */
