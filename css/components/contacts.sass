@@ -1,0 +1,75 @@
+.contacts
+    width: 100%
+    padding: 90px 20px
+
+    @include desktop-small
+        padding: 60px 20px
+
+    @include tablet
+        padding: 40px 20px
+
+    @include mobile-big
+        padding: 30px 20px
+
+    .contacts__wrapper
+
+    .contacts__info
+        padding: 0px 3%
+
+        .contacts__address
+            display: flex
+            flex-direction: column
+            span
+                padding-top: 30px
+
+        .contacts__social
+            max-width: 312px
+
+            a:hover span
+                color: $yellow
+
+        .contacts__mail a, .contacts__phone a
+            display: flex
+            gap: 20px
+            align-items: center
+
+    h2
+        font-family: Oranienbaum
+        font-size: 42px
+        font-weight: 400
+        line-height: 48.51px
+        color: $green
+        text-transform: uppercase
+
+        @include desktop-small
+            font-size: 36px
+            line-height: 30px
+
+        @include tablet
+            font-size: 30px
+
+        @include mobile-big
+            font-size: 24px
+
+    span
+        font-family: Montserrat
+        font-size: 16px
+        line-height: 24px
+        max-width: 654px
+        color: $green
+
+        @include tablet
+            font-size: 14px
+
+    .contacts__map
+        padding-top: 30px
+        display: flex
+        flex-direction: column
+        gap: 15px
+
+        h2
+            text-align: center
+            pad
+
+        iframe
+            border: none

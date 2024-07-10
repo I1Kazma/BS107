@@ -1,0 +1,72 @@
+.sertifications
+    width: 100%
+    display: flex
+    justify-content: center
+    position: relative
+    padding: 90px 60px
+
+    @include desktop-small
+        padding: 20px
+
+    .sertifications__layout
+        width: 100%
+        max-width: 1420px
+
+    .sertifications__title
+        text-align: end
+        padding-bottom: 50px
+
+        @include desktop-small
+            padding-bottom: 20px
+
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+        display: none
+
+    .sert-swiper
+        padding-bottom: 40px
+        max-width: 1113px
+
+    .swiper-slide
+        display: flex
+        justify-content: center
+
+    .swiper-pagination-bullet
+        width: 30px
+        height: 5px
+        border-radius: 4px
+
+    .swiper-pagination-bullet-active
+        width: 50px
+        background: linear-gradient(90deg, #F2C888 0%, #A87616 100%) !important
+
+    .swiper-button-prev, .swiper-button-next
+        width: 50px
+        height: 50px
+
+        @include desktop-small
+            display: none
+
+    .swiper-pagination
+        width: 100%
+        bottom: 20px !important
+        display: flex
+        justify-content: center
+
+    img
+        width: 100%
+        max-width: 920px
+
+    .sert__annotation
+        width: 100%
+        display: flex
+        justify-content: center
+    span
+        font-family: Montserrat
+        font-size: 12px
+        font-weight: 400
+        line-height: 14.63px
+        text-align: center
+        display: flex
+        width: 100%
+        justify-content: center
+        max-width: 459px

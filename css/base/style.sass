@@ -1,0 +1,71 @@
+@import '../utils/utils'
+
+$header-font: "Alumni Sans", sans-serif
+
+/*Цвета проекта*/
+$green: #4D665D
+$yellow: #FFCD55
+$pink: #F1D9D1
+
+/*Общие стили проекта*/
+*
+    padding: 0px
+    margin: 0px
+    box-sizing: border-box
+    transition: 0.3s ease
+
+html
+    scroll-behavior: smooth
+
+*::-webkit-scrollbar
+    height: 8px
+    width: 8px
+
+*::-webkit-scrollbar-thumb
+    background-color: $green
+    border-radius: 20px
+
+*::-webkit-scrollbar-track
+    border: 4px solid #fff
+
+body
+    overflow-x: hidden
+    background: black
+    background: white
+    background: #FCF4F2
+
+body, ul, li, a, button, h1, h2, h3, h4, input, textarea
+    padding: 0px
+    margin: 0px
+    /*font-family: $font*/
+
+textarea, input
+    outline: none !important
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+    color: inherit
+
+.section__title
+    width: 100%
+
+    h2
+        font-family: Oranienbaum
+        font-size: 42px
+        font-weight: 400
+        line-height: 49px
+        color: $green
+        text-transform: uppercase
+        width: 100%
+
+        @include desktop-small
+            font-size: 36px
+
+        @include tablet
+            font-size: 30px
+
+        @include mobile-big
+            font-size: 24px

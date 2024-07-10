@@ -1,0 +1,29 @@
+.services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../img/services-bg.png) no-repeat center;
+}
+
+.services-items {
+  width: 100%;
+  max-width: 918px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-auto-rows: 480px;
+}
+
+.services__more {
+  border: 1px solid #4D665D;
+  padding: 22px 22px;
+  width: 100%;
+  max-width: 540px;
+  border-radius: 13px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=services-items.css.map */

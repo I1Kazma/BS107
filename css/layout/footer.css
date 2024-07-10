@@ -1,0 +1,79 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #4D665D;
+  margin: 0px 67px;
+}
+
+.footer__wrapper {
+  max-width: 878px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 27px 0px;
+}
+
+.footer__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer__logo img {
+  max-width: 340px;
+}
+
+.footer__nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer__info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer__address {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer__tg, .footer__vk {
+  padding: 16.5px 25px;
+}
+
+.footer__tg {
+  background: url(../img/tg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer__vk {
+  background: url(../img/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}/*# sourceMappingURL=footer.css.map */

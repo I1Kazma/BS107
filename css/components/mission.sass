@@ -1,0 +1,74 @@
+.mission
+    background: #F1D9D1
+    margin-bottom: 30px
+    display: flex
+    padding: 60px
+    gap: 30px
+    justify-content: space-between
+    width: 100%
+
+    @include desktop-small
+        padding: 40px
+
+    @include mobile-big
+        padding: 20px
+
+    &__img
+        @include mobile-big
+            display: None
+
+        img
+            min-width: 354px
+            width: 100%
+
+            @include desktop-small
+                min-width: 320px
+
+            @include tablet
+                min-width: 260px
+
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 30px
+        max-width: 469px
+
+        @include mobile-big
+            max-width: none
+
+        .mission__text
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+        h2
+            font-family: Oranienbaum
+            font-size: 42px
+            font-weight: 400
+            line-height: 48.51px
+            color: $green
+            text-transform: uppercase
+
+            @include desktop-small
+                font-size: 36px
+
+            @include tablet
+                font-size: 30px
+
+            @include mobile-big
+                font-size: 24px
+
+        span, li
+            font-family: Montserrat
+            font-size: 16px
+            line-height: 24px
+            color: $green
+
+            @include tablet
+                font-size: 14px
+
+        ul
+            display: flex
+            flex-direction: column
+            gap: 20px
+            list-style-type: "-"

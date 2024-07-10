@@ -1,0 +1,73 @@
+.services
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: url(../img/services-bg.png)
+
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    padding: 0px 20px 90px
+
+.services-items
+    max-width: 1520px
+    display: grid
+    width: 100%
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto))
+    padding: 90px 0px
+    gap: 50px
+
+    @include tablet
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto))
+        gap: 25px
+
+    .services-item
+        a
+            display: flex
+            gap: 10px
+            justify-content: center
+
+            .services-item__text
+                display: flex
+                justify-content: end
+                align-items: end
+                position: relative
+            img
+                @media (max-width: 450px)
+                    width: 100%
+                    min-width: 220px
+
+            span
+                writing-mode: vertical-rl
+                transform: rotate(180deg)
+                color: $green
+                text-transform: uppercase
+
+                font-family: Montserrat
+                font-size: 20px
+                font-weight: 700
+                line-height: 30px
+
+        &:first-child img, &:nth-child(2) img, &:nth-child(3) img
+            border-top: 5px solid #FDD5C7
+            padding-top: 20px
+.services__more
+    border: 1px solid $green
+    padding: 22px 22px
+    width: 100%
+    max-width: 540px
+    border-radius: 13px
+    text-align: center
+
+    font-family: Montserrat
+    font-size: 20px
+    line-height: 30px
+    text-transform: uppercase
+    color: $green
+
+    &:hover
+        border: 1px solid $yellow
+        color: $yellow
+        background: white
