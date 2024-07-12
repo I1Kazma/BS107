@@ -72,6 +72,73 @@
           <h1>Фотогалерея</h1>
         </div>
       </section>
+      <section class="work">
+        <div class="work__heading">
+          <h2>Атмосфера гармонии и заботы о себе</h2>
+        </div>
+        <div class="work__slider">
+          <div class="swiper place-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/place-3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/place-4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/place-5.png" alt="" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/place-3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/place-4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/place-5.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work__heading">
+          <h2>Результаты наших работ</h2>
+        </div>
+        <div class="work__slider">
+          <div class="swiper work-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/result-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/result-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/result-3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/result-4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/result-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/result-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/result-3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/result-4.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
@@ -122,5 +189,93 @@
   </body>
   <script src="js/script.js"></script>
 
-  <script></script>
+  <script>
+    var work_swiper = new Swiper(".work-swiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        dragSize: 95,
+      },
+      loop: true,
+
+      breakpoints: {
+        0: {
+          centeredSlides: true,
+          slidesPerView: 1.5,
+          scrollbar: {
+            dragSize: 29,
+          },
+        },
+
+        576: {
+          centeredSlides: true,
+          slidesPerView: 2.5,
+          scrollbar: {
+            dragSize: 52,
+          },
+        },
+
+        768: {
+          centeredSlides: true,
+          slidesPerView: 3,
+          scrollbar: {
+            dragSize: 57,
+          },
+        },
+
+        992: {
+          centeredSlides: false,
+          slidesPerView: 4,
+          scrollbar: {
+            dragSize: 95,
+          },
+        },
+      },
+    });
+
+    var place_swiper = new Swiper(".place-swiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        dragSize: 95,
+      },
+      loop: true,
+
+      breakpoints: {
+        0: {
+          centeredSlides: true,
+          slidesPerView: 1.5,
+          scrollbar: {
+            dragSize: 29,
+          },
+        },
+
+        576: {
+          centeredSlides: true,
+          slidesPerView: 2.5,
+          scrollbar: {
+            dragSize: 52,
+          },
+        },
+
+        768: {
+          centeredSlides: true,
+          slidesPerView: 3,
+          scrollbar: {
+            dragSize: 57,
+          },
+        },
+
+        992: {
+          centeredSlides: false,
+          slidesPerView: 4,
+          scrollbar: {
+            dragSize: 95,
+          },
+        },
+      },
+    });
+  </script>
 </html>
