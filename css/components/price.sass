@@ -1,0 +1,165 @@
+.price
+    display: flex
+    flex-direction: column
+    gap: 40px
+    padding: 0px 90px 90px
+    max-width: 1420px
+
+    @include desktop-small
+        padding: 0px 50px 50px
+
+    @include mobile-big
+        padding: 0px 20px 20px
+
+.price__heading
+
+    h1
+        font-family: Oranienbaum
+        font-size: 42px
+        font-weight: 400
+        line-height: 48.51px
+        color: $green
+        text-transform: uppercase
+        text-align: center
+
+        @include desktop-small
+            font-size: 36px
+            line-height: 30px
+
+        @include tablet
+            font-size: 30px
+
+        @include mobile-big
+            font-size: 24px
+
+.price__tabs
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    row-gap: 7px
+
+    @include mobile-big
+        flex-direction: column
+
+    li
+
+        display: flex
+        align-items: center
+        border: 1px solid #325353
+        margin: -0.5px
+
+        a
+            padding: 17px 32px
+            font-family: Montserrat
+            font-size: 15px
+            font-weight: 300
+            line-height: 18.29px
+            text-align: center
+            text-transform: uppercase
+
+            @include tablet
+                font-size: 14px
+                padding: 12px
+
+            @include mobile-big
+                width: 100%
+
+            &:hover
+                background: $green
+                color: white
+
+.price__content
+    display: flex
+    flex-direction: column
+
+.price__group
+    display: flex
+    justify-content: space-between
+    gap: 30px
+    border-top: 1px solid $green
+
+    @include mobile-big
+        flex-direction: column
+        gap: 15px
+
+    h2
+        font-family: Montserrat
+        font-size: 20px
+        font-weight: 700
+        line-height: 30px
+        text-transform: uppercase
+        color: $green
+        padding-top: 20px
+        max-width: 328px
+        width: 25%
+
+        @include desktop-small
+            font-size: 16px
+
+        @include tablet
+            padding-top: 10px
+
+        @include mobile-big
+            width: 100%
+
+.price__items
+    width: 100%
+    max-width: 840px
+
+.price__item
+    padding: 23px 8px
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    align-items: center
+
+    @include tablet
+        padding: 12px 8px
+
+    &:nth-child(odd)
+        background: #F1D9D1
+
+.price__item__info
+
+    h3
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        display: flex
+        gap: 5px
+
+        @include tablet
+            font-size: 14px
+
+        p
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 100
+            line-height: 24px
+
+            @include tablet
+                font-size: 14px
+
+    span
+        font-family: Montserrat
+        font-size: 16px
+        font-style: italic
+        font-weight: 300
+        line-height: 24px
+        color: $green
+
+        @include tablet
+            font-size: 12px
+
+.price__cost
+    flex-shrink: 0
+
+    span
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+
+        @include tablet
+            font-size: 12px
