@@ -367,7 +367,6 @@ a {
   align-items: flex-end;
   bottom: 17%;
   top: auto;
-  width: 100%;
   text-align: left;
 }
 .mainpage .banner__content span {
@@ -379,6 +378,7 @@ a {
   color: white;
   text-align: left;
   width: 100%;
+  max-width: 689px;
 }
 @media (max-width: 768px) {
   .mainpage .banner__content span {
@@ -406,7 +406,7 @@ a {
 }
 @media (max-width: 576px) {
   .mainpage .banner__content span:nth-child(2) {
-    padding-left: 40px;
+    padding-left: 20px;
     font-size: 36px;
   }
 }
