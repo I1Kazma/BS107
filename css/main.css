@@ -264,6 +264,16 @@ a {
   font-weight: 400;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .banner .banner__content h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 576px) {
+  .banner .banner__content h1 {
+    font-size: 38px;
+  }
+}
 @media (max-width: 992px) {
   .banner .banner__content img {
     max-width: 233px;
