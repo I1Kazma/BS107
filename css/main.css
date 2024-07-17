@@ -352,6 +352,55 @@ a {
   }
 }
 
+.mainpage .banner__content {
+  flex-direction: column;
+  align-items: flex-end;
+  bottom: 17%;
+  top: auto;
+  width: 100%;
+  text-align: left;
+}
+.mainpage .banner__content span {
+  font-family: Oraniembaum;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 48px;
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .mainpage .banner__content span {
+    font-size: 36px;
+  }
+}
+@media (max-width: 576px) {
+  .mainpage .banner__content span {
+    font-size: 28px;
+  }
+}
+.mainpage .banner__content span:nth-child(2) {
+  color: #FFCD55;
+  text-align: end;
+  font-size: 64px;
+  width: 100%;
+  text-align: left;
+  padding-left: 175px;
+}
+@media (max-width: 768px) {
+  .mainpage .banner__content span:nth-child(2) {
+    padding-left: 100px;
+    font-size: 48px;
+  }
+}
+@media (max-width: 576px) {
+  .mainpage .banner__content span:nth-child(2) {
+    padding-left: 40px;
+    font-size: 36px;
+  }
+}
+
 .services.mainpage {
   display: flex;
   flex-direction: column;
