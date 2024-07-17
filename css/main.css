@@ -1028,9 +1028,10 @@ a {
   align-items: end;
   position: relative;
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .services-items .services-item a img {
     width: 100%;
+    max-width: 280px;
     min-width: 220px;
   }
 }
