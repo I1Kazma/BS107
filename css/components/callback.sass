@@ -1,0 +1,242 @@
+.callback
+    background: #F1D9D1
+
+    max-width: 1222px
+    width: 95%
+    border-radius: 25px
+    padding: 3.5% 6.5%
+
+    display: flex
+    justify-content: space-between
+    gap: 30px
+
+    margin: 0px 20px 60px
+
+    @include desktop-small
+        margin: 0px 20px 30px
+        padding: 30px
+
+    @include tablet
+        flex-direction: column
+        align-items: center
+        max-width: 600px
+        margin: 0px 20px 0px
+
+    @include mobile-big
+        padding: 20px
+
+.callback__form
+    display: flex
+    flex-direction: column
+    gap: 30px
+
+    @include tablet
+        width: 100%
+
+    h2
+        font-family: Oranienbaum
+        font-size: 42px
+        font-weight: 400
+        line-height: 48.51px
+        color: $green
+        text-transform: uppercase
+
+        @include desktop-small
+            font-size: 36px
+
+        @include tablet
+            font-size: 30px
+
+        @include mobile-big
+            font-size: 24px
+
+    form
+        display: flex
+        flex-direction: column
+        gap: 30px
+        max-width: 351px
+
+        @include tablet
+            max-width: none
+
+        .callback__group
+            position: relative
+
+            input
+                font-size: 18px
+                padding: 10px 10px 10px 5px
+                display: block
+                width: 100%
+                border: none
+                border-bottom: 1px solid #757575
+                background: transparent
+                max-width: 351px
+
+                @include tablet
+                    max-width: none
+
+                &:focus
+                    outline: none
+
+                    & ~ .bar:before,
+                    & ~ .bar:after
+                        width: 60%
+
+            /* LABEL =======================================
+
+            label
+                color: #999
+                position: absolute
+                pointer-events: none
+                font-family: Montserrat
+                font-size: 16px
+                font-weight: 400
+                line-height: 19.5px
+                left: 5px
+                top: 10px
+                transition: 0.2s ease all
+                -moz-transition: 0.2s ease all
+                -webkit-transition: 0.2s ease all
+
+            /* active state
+
+            input
+                &:focus ~ label, &:valid ~ label
+                    top: -20px
+                    font-size: 14px
+                    color: $green
+
+            /* BOTTOM BARS =================================
+
+            .bar
+                position: relative
+                display: block
+                width: 300px
+
+                &:before, &:after
+                    content: ''
+                    height: 2px
+                    width: 0
+                    bottom: 1px
+                    position: absolute
+                    background: $green
+                    transition: 0.2s ease all
+                    -moz-transition: 0.2s ease all
+                    -webkit-transition: 0.2s ease all
+
+                &:before
+                    left: 57%
+
+                &:after
+                    right: 40%
+
+                /* active state
+
+
+
+            /* HIGHLIGHTER ==================================
+
+            .highlight
+                position: absolute
+                height: 60%
+                width: 100px
+                top: 25%
+                left: 0
+                pointer-events: none
+                opacity: 0.5
+
+            /* active state
+
+            input
+                &:focus ~ .highlight
+                    -webkit-animation: inputHighlighter 0.3s ease
+                    -moz-animation: inputHighlighter 0.3s ease
+                    animation: inputHighlighter 0.3s ease
+
+            /* ANIMATIONS ================
+
+    button
+        font-family: Montserrat
+        font-size: 20px
+        font-weight: 400
+        line-height: 30px
+
+        border: 1px solid $green
+        border-radius: 13px
+        padding: 22px 5%
+        background: transparent
+        cursor: pointer
+
+        &:hover
+            background: $green
+            color: white
+
+    span
+        font-family: Montserrat
+        font-size: 12px
+        font-weight: 400
+        color: $green
+
+.callback__contacts
+    display: flex
+    flex-direction: column
+    gap: 30px
+
+    @include tablet
+        width: 100%
+
+.contacts__group
+    display: flex
+    flex-direction: column
+    gap: 5px
+
+    &:nth-child(2)
+        a
+            font-family: Alumni Sans
+    &:nth-child(3)
+        a
+            line-height: 0
+    a
+        font-family: Montserrat
+        font-size: 40px
+        font-weight: 400
+        line-height: 48.76px
+        color: $green
+
+        @include desktop-small
+            font-size: 30px
+
+        &:hover
+
+            color: $yellow
+
+    span
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 400
+        line-height: 17.07px
+        color: $green
+
+@-webkit-keyframes inputHighlighter
+    from
+    background: $green
+
+    to
+    width: 0
+    background: transparent
+
+@-moz-keyframes inputHighlighter
+    from
+    background: $green
+
+    to
+    width: 0
+    background: transparent
+
+@keyframes inputHighlighter
+    from
+        background: $green
+
+    to
+        width: 0
+        background: transparent
