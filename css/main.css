@@ -1163,6 +1163,17 @@ a {
   cursor: pointer;
   color: #4D665D;
 }
+@media (max-width: 768px) {
+  .callback__form button {
+    font-size: 18px;
+    padding: 10px 5%;
+  }
+}
+@media (max-width: 576px) {
+  .callback__form button {
+    font-size: 16px;
+  }
+}
 .callback__form button:hover {
   background: #4D665D;
   color: white;
