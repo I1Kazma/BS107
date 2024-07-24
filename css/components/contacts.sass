@@ -2,6 +2,10 @@
     width: 100%
     padding: 90px 20px
 
+    display: flex
+    flex-direction: column
+    gap: 50px
+
     @include desktop-small
         padding: 60px 20px
 
@@ -12,18 +16,32 @@
         padding: 30px 20px
 
     .contacts__wrapper
+        display: flex
+        justify-content: space-between
+        gap: 80px
+
+        @include desktop-small
+        gap: 30px
+
+        @include tablet
+            flex-direction: column
 
     .contacts__info
         padding: 0px 3%
+        max-width: 770px
+        width: 100%
 
         .contacts__address
             display: flex
             flex-direction: column
             span
-                padding-top: 30px
+                padding: 30px 0px 20px
 
         .contacts__social
             max-width: 312px
+            display: flex
+            flex-direction: column
+            gap: 20px
 
             a:hover span
                 color: $yellow
@@ -34,6 +52,26 @@
             align-items: center
 
     h2
+        font-family: Oranienbaum
+        font-size: 42px
+        font-weight: 400
+        line-height: 48.51px
+        color: $green
+        text-transform: uppercase
+        text-align: center
+
+        @include desktop-small
+            font-size: 36px
+            line-height: 40px
+
+        @include tablet
+            font-size: 30px
+            text-align: left
+
+        @include mobile-big
+            font-size: 24px
+
+    h3
         font-family: Oranienbaum
         font-size: 42px
         font-weight: 400
@@ -66,6 +104,14 @@
         display: flex
         flex-direction: column
         gap: 15px
+        width: 100%
+        max-height: 422px
+
+        @include tablet
+            padding-top: 0px
+
+        .map
+            height: 100%
 
         h2
             text-align: center

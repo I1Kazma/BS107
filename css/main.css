@@ -1528,6 +1528,9 @@ a {
 .contacts {
   width: 100%;
   padding: 90px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 @media (max-width: 992px) {
   .contacts {
@@ -1544,18 +1547,34 @@ a {
     padding: 30px 20px;
   }
 }
+.contacts .contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .contacts .contacts__wrapper {
+    flex-direction: column;
+  }
+}
 .contacts .contacts__info {
   padding: 0px 3%;
+  max-width: 770px;
+  width: 100%;
 }
 .contacts .contacts__info .contacts__address {
   display: flex;
   flex-direction: column;
 }
 .contacts .contacts__info .contacts__address span {
-  padding-top: 30px;
+  padding: 30px 0px 20px;
 }
 .contacts .contacts__info .contacts__social {
   max-width: 312px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .contacts .contacts__info .contacts__social a:hover span {
   color: #FFCD55;
@@ -1572,20 +1591,46 @@ a {
   line-height: 48.51px;
   color: #4D665D;
   text-transform: uppercase;
+  text-align: center;
 }
 @media (max-width: 992px) {
   .contacts h2 {
     font-size: 36px;
-    line-height: 30px;
+    line-height: 40px;
   }
 }
 @media (max-width: 768px) {
   .contacts h2 {
     font-size: 30px;
+    text-align: left;
   }
 }
 @media (max-width: 576px) {
   .contacts h2 {
+    font-size: 24px;
+  }
+}
+.contacts h3 {
+  font-family: Oranienbaum;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 48.51px;
+  color: #4D665D;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .contacts h3 {
+    font-size: 36px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .contacts h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts h3 {
     font-size: 24px;
   }
 }
@@ -1606,6 +1651,16 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%;
+  max-height: 422px;
+}
+@media (max-width: 768px) {
+  .contacts .contacts__map {
+    padding-top: 0px;
+  }
+}
+.contacts .contacts__map .map {
+  height: 100%;
 }
 .contacts .contacts__map h2 {
   text-align: center;
