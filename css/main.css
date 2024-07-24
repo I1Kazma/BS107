@@ -1161,6 +1161,7 @@ a {
   padding: 22px 5%;
   background: transparent;
   cursor: pointer;
+  color: #4D665D;
 }
 .callback__form button:hover {
   background: #4D665D;
