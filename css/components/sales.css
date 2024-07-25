@@ -1,0 +1,25 @@
+.sales {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1440px;
+  margin-top: 180px;
+}
+
+.sales__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sales__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 40px;
+}
+
+.sales__item img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}/*# sourceMappingURL=sales.css.map */
