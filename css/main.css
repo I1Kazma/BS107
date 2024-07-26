@@ -2552,7 +2552,7 @@ a {
 @media (max-width: 768px) {
   .sales-page__content {
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
   }
 }
 .sales-page__content img {
@@ -2570,6 +2570,11 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media (max-width: 768px) {
+  .sales-page__content .sales-page__text {
+    align-items: center;
+  }
 }
 .sales-page__content .sales-page__text span, .sales-page__content .sales-page__text li {
   color: #4D665D;
@@ -2589,6 +2594,37 @@ a {
 }
 .sales-page__content .sales-page__text ul {
   list-style-type: disc;
+}
+.sales-page__content .sales-page__text a {
+  margin-top: 50px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  border: 1px solid #4D665D;
+  border-radius: 13px;
+  padding: 22px 5%;
+  background: transparent;
+  cursor: pointer;
+  color: #4D665D;
+  max-width: 447px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .sales-page__content .sales-page__text a {
+    font-size: 18px;
+    padding: 10px 5%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .sales-page__content .sales-page__text a {
+    font-size: 16px;
+  }
+}
+.sales-page__content .sales-page__text a:hover {
+  background: #4D665D;
+  color: white;
 }
 
 .footer {

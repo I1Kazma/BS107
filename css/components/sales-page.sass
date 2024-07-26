@@ -65,7 +65,7 @@
 
     @include tablet
         gap: 30px
-        grid-template-columns: repeat(auto-fit, minmax(350px, auto))
+        grid-template-columns: repeat(auto-fit, minmax(330px, auto))
 
     img
         border-radius: 25px
@@ -75,10 +75,15 @@
         @include tablet
             height: 250px
 
+        @include mobile
+
     .sales-page__text
         display: flex
         flex-direction: column
         gap: 15px
+
+        @include tablet
+            align-items: center
 
         span, li
             color: $green
@@ -96,3 +101,30 @@
 
         ul
             list-style-type: disc
+
+        a
+            margin-top: 50px
+            font-family: Montserrat
+            font-size: 20px
+            font-weight: 400
+            line-height: 30px
+            border: 1px solid $green
+            border-radius: 13px
+            padding: 22px 5%
+            background: transparent
+            cursor: pointer
+            color: $green
+            max-width: 447px
+            text-align: center
+
+            @include tablet
+                font-size: 18px
+                padding: 10px 5%
+                margin-top: 20px
+
+            @include mobile-big
+                font-size: 16px
+
+            &:hover
+                background: $green
+                color: white
