@@ -11,7 +11,13 @@
         background-size: cover
         background-repeat: no-repeat
         background-position: center
-        padding: 0px 20px 90px
+        padding: 0px 20px
+
+        @include tablet
+            padding: 60px 20px
+
+        @include mobile-big
+            padding: 30px 20px
 
 .services-items
     max-width: 1520px
@@ -24,9 +30,11 @@
     @include tablet
         grid-template-columns: repeat(auto-fit, minmax(350px, auto))
         gap: 25px
+        padding: 60px 0px
 
     @include mobile-big
         grid-template-columns: repeat(auto-fit, minmax(280px, auto))
+        padding: 30px 20px
 
     .services-item
         a
