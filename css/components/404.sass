@@ -1,0 +1,96 @@
+.error-404
+    position: relative
+    width: 100%
+    padding: 0px 20px
+
+    img
+        position: absolute
+        left: 34%
+        top: 10px
+
+        @media (max-width: 1100px)
+            position: absolute
+            left: 34%
+            max-width: 377px
+            top: 10px
+
+        @media (max-width: 900px)
+            left: 36%
+            max-width: 297px
+
+        @include tablet
+            left: 37%
+            max-width: 218px
+            top: 20px
+
+        @include mobile-big
+            left: 40%
+            max-width: 139px
+            top: 15px
+
+.error-404__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+
+    span
+        font-family: Bakbak One
+        font-size: 642px
+        font-weight: 400
+        color: #FFE9DC
+        line-height: 0.8
+
+        @media (max-width: 1100px)
+            font-size: 500px
+
+        @media (max-width: 900px)
+            font-size: 400px
+
+        @include tablet
+            font-size: 300px
+
+        @include mobile-big
+            font-size: 200px
+
+    h1
+        font-family: Alumni Sans
+        font-size: 42px
+        font-weight: 400
+
+        @include tablet
+            font-size: 32px
+
+    p
+        font-family: Alumni Sans
+        font-size: 24px
+        max-width: 300px
+        text-align: center
+
+        @include tablet
+            font-size: 20px
+
+.error-404__btn
+
+    border: 1px solid $green
+    border-radius: 13px
+    padding: 18px 53px
+    color: $green
+
+    font-family: Montserrat
+    font-size: 20px
+    font-weight: 400
+    text-align: center
+
+    display: block
+
+    text-transform: uppercase
+
+    @include tablet
+        font-size: 16px
+        padding: 18px 40px
+
+    &:hover
+        background: $green
+        color: white
