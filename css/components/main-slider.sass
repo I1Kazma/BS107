@@ -4,16 +4,10 @@
     position: relative
 
     @include desktop-small
-        height: 363px
-
-    @include tablet
-        height: 336px
+        height: 568px
 
     @include mobile-big
-        height: 252px
-
-    @include mobile
-        height: 136px
+        height: 635px
 
     .swiper-wrapper
 
@@ -78,6 +72,9 @@
             line-height: 58.51px
 
             text-transform: uppercase
+
+            @include mobile-big
+                font-size: 36px
 
         span
             font-family: Montserrat

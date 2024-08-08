@@ -547,22 +547,12 @@ a {
 }
 @media (max-width: 992px) {
   .promo {
-    height: 363px;
-  }
-}
-@media (max-width: 768px) {
-  .promo {
-    height: 336px;
+    height: 568px;
   }
 }
 @media (max-width: 576px) {
   .promo {
-    height: 252px;
-  }
-}
-@media (max-width: 380px) {
-  .promo {
-    height: 136px;
+    height: 635px;
   }
 }
 .promo .swiper {
@@ -624,6 +614,11 @@ a {
   font-weight: 900;
   line-height: 58.51px;
   text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .promo .slide__content h3 {
+    font-size: 36px;
+  }
 }
 .promo .slide__content span {
   font-family: Montserrat;
